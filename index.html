@@ -9,6 +9,15 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+
+        h4 {
+            font-size: 1.2em;
+            color: #000;
+            margin: 20px 0 10px 0;
+            padding-bottom: 5px;
+            border-bottom: 1px dotted #666;
+            font-weight: bold;
+        }
         }
 
         body {
@@ -204,8 +213,19 @@
             <h2><span class="chapter-number">4.</span> Tools</h2>
             <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
             
+            <h4><span class="chapter-number">4.1</span> DataSonifyer - 5 Steps to your Sonification</h4>
+            
             <ul>
-                <li><strong>DataSonifyer:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                <li><strong>1. Prepare Data:</strong> You need a dataset (e.g. climate data) as CSV-file with at least one column of numerical data with one value per row (e.g. temperature anomaly per year).</li>
+                <li><strong>2. Load Data:</strong> Open studio.datasonifyer.de/en and click on "Load Data", select your CSV-file and click "open". In the pop-up, insert the delimiter of the file (mostly a comma: ",")</li>
+                <li><strong>3. Choose Mapping:</strong> Which musical parameter do you want to control with your data? Pitch or Frequency? Amplitude? Or Envelope? The corresponding sound-modules are below the green canvas or can be loaded with a click on "Add Sound Module"</li>
+                <li><strong>4. Sonify Data:</strong> Let's use the Frequency-Module. Choose the data in the "Data"-Select (e.g. temperature anomaly). You then can specify the lowest and highest note of the sonification by adding values into "Min Freq" and "Max Freq" in Hertz (hearable range goes from 20 to 20000).</li>
+                <li><strong>5. Finetuning and Mixing:</strong> If you want to use a musical scale, choose one from "Scalemode". Then, define the minimum and the maximum octave in the corresponding boxes (e.g. Min: 2, Max: 5). If you want to add another set of data, e.g. Amplitude, just use the Amplitude-Module in the same way as the Frequency-Module.</li>
+            </ul>
+            
+            <h4><span class="chapter-number">4.2</span> Other Tools</h4>
+            
+            <ul>
                 <li><strong>Sonic Pi:</strong> Sed do eiusmod tempor incididunt ut labore et dolore magna</li>
             </ul>
             
