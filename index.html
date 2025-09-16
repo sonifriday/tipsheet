@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +9,6 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-
-        h4 {
-            font-size: 1.2em;
-            color: #000;
-            margin: 20px 0 10px 0;
-            padding-bottom: 5px;
-            border-bottom: 1px dotted #666;
-            font-weight: bold;
-        }
         }
 
         body {
@@ -26,14 +17,14 @@
             color: #000;
             background-color: #f0f0f0;
         }
-        
-.fixed-logo {
-    width: 50px;
-    height: auto;
-    margin-top: 20px; /* Logo nach unten verschieben */
-    margin-left: 40px;
-    display: left;
-}
+
+        .fixed-logo {
+            width: 50px;
+            height: auto;
+            margin-top: 20px;
+            margin-left: 40px;
+            display: left;
+        }
 
         .container {
             max-width: 800px;
@@ -76,6 +67,15 @@
             border-bottom: 1px solid #000;
             text-transform: uppercase;
             letter-spacing: 1px;
+        }
+
+        h4 {
+            font-size: 1.2em;
+            color: #000;
+            margin: 20px 0 10px 0;
+            padding-bottom: 5px;
+            border-bottom: 1px dotted #666;
+            font-weight: bold;
         }
 
         .chapter {
@@ -133,6 +133,42 @@
             color: #000;
         }
 
+        /* Neuer Stil für den hervorgehobenen Slogan */
+        .slogan {
+            background: linear-gradient(45deg, #f0f0f0, #e0e0e0);
+            color: #444;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: bold;
+            letter-spacing: 1px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            text-transform: uppercase;
+        }
+
+        .reason-item {
+            margin-bottom: 25px;
+            padding: 15px;
+            border-left: 4px solid #000;
+            background-color: #f9f9f9;
+        }
+
+        .reason-title {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 8px;
+            color: #000;
+        }
+
+        .reason-text {
+            color: #333;
+            font-style: italic;
+            text-indent: 0;
+        }
+
         a {
             color: #000;
             text-decoration: underline;
@@ -163,6 +199,36 @@
         i {
             color: #666;
         }
+        .code-block {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px 0;
+    font-family: 'Courier New', monospace;
+}
+
+.code-block h5 {
+    margin: 0 0 10px 0;
+    color: #333;
+    font-size: 1em;
+    border-bottom: none;
+}
+
+.code-block pre {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: none;
+}
+
+.code-block code {
+    background: transparent;
+    padding: 0;
+    color: #333;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
     </style>
 </head>
 <body>
@@ -170,51 +236,70 @@
         <header>
             <h1>How To Make Data Sound</h1>
             <h3>A tipsheet by @sonifriday</h3>
-
         </header>
 
         <div class="chapter">
             <h2><span class="chapter-number">1.</span> On Sonification</h2>
-            <p>Graphics are for the eyes 👀, sonification for the ears 👂</p>
             
-            <p>"Sonification [is the] use of nonspeech audio to convey information; more specifically sonification is the transformation of data relations into perceived relations in an acoustic signal for the purposes of facilitating communication or interpretation.</p>
-            <p><i><a href="https://sonification.de/son/definition/" target="_blank">Thomas Hermann, Bielefeld University</a></i></p>
+            <p>"Sonification [is the] use of nonspeech audio to convey information; more specifically sonification is the transformation of data relations into perceived relations in an acoustic signal for the purposes of facilitating communication or interpretation."</p>
             
+            <p><i><a href="https://sonification.de/son/definition/">International Community for Auditory Display, in: Schoon / Volmar 2012, p. 12.</a></i></p>
+            
+            <div class="slogan">
+                Graphics are for the eyes 👀, Sonification is for the ears 👂
+            </div>
         </div>
 
         <div class="chapter">
             <h2><span class="chapter-number">2.</span> Why to use sonification</h2>
-            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
             
-            <p>Nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.</p>
+            <div class="reason-item">
+                <div class="reason-title">1. To take listeners on a journey</div>
+                <div class="reason-text">The ear hears things the eye can't see. Sonification creates a completely new experience for your audience, revealing patterns that charts and graphs might miss.</div>
+            </div>
             
-            <ul>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                <li>Sed do eiusmod tempor incididunt ut labore et dolore</li>
-                <li>Ut enim ad minim veniam, quis nostrud exercitation</li>
-                <li>Duis aute irure dolor in reprehenderit in voluptate</li>
-            </ul>
+            <div class="reason-item">
+                <div class="reason-title">2. To raise awareness</div>
+                <div class="reason-text">Words can't express everything, but sound hits you right in the feels. Turn climate data into something people actually feel, not just another chart they scroll past.</div>
+            </div>
+            
+            <div class="reason-item">
+                <div class="reason-title">3. To gain attention</div>
+                <div class="reason-text">An unexpected sound stops people in their tracks. Whether it's harsh inequality data or a haunting extinction melody – audio cuts through noise and grabs attention.</div>
+            </div>
+            
+            <div class="reason-item">
+                <div class="reason-title">4. To tell a story differently</div>
+                <div class="reason-text">Asking "what would this sound like?" makes you really think about what your data means. This fresh perspective often reveals stories you never noticed before.</div>
+            </div>
+            
+            <div class="reason-item">
+                <div class="reason-title">5. To have fun</div>
+                <div class="reason-text">Sometimes the best reason is just joy. Data doesn't always have to be serious – it can groove, surprise, and make people smile. That's perfectly valid science too.</div>
+            </div>
         </div>
 
         <div class="chapter">
             <h2><span class="chapter-number">3.</span> Examples</h2>
-            <p>Quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio nam libero tempore.</p>
+
+            <h3><b>Instagram Reels:</b></h> 
+            <p>@sonifriday is our Instagram account, in which we've shared lots of short reels about different topics, including <a href = 'https://www.instagram.com/reel/CnXHir5qN5Y/?igsh=emQwY3F3MG1sbjd2'>speaking times of men and women in the German parliament</a>, <a href = 'https://www.instagram.com/reel/ClOu38nK_b-/?igsh=MXhqNzZjZDJvMGR2eQ=='>the Ahrtal flood of 2021</a>, a natural disaster, as well as <a href = 'https://www.instagram.com/reel/Cwp7h6VtyZr/?igsh=eXVyZjJhbmFoenAz'>birds dying from window collisions</a>.</p>
             
-            <p>Cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
-            
-            <div class="highlight">
-                <p><strong>Use cases:</strong> Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
-            </div>
-            
-            <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+            <h3><b>Podcast episodes:</b></h> 
+            <p><a href = 'https://www.ardaudiothek.de/episode/cut-das-virus-das-uns-trennt/s2-f2-auf-abstand/wdr/14268909/'>Connection lost:</a> An ARD podcast about how much the coronavirus pandemic has divided us as a society includes the changing numbers of visitors in „places like restaurants, cafes, shopping centers, theme parks, museums, libraries, and movie theaters“ as a sonification. (in German)</p>
+            <p><a href = 'https://www.sueddeutsche.de/politik/podcast-nachrichten-klima-meere-erhitzung-klimakrise-stefan-rahmstorf-klimafolgen-lux.UDb8tBmXevuMh8rS5EwhiM'>Boiling sea:</a> The daily podcast by Süddeutsche Zeitung featured a sonification on rising ocean temperatures. (in German)</p>
+            <p><a href = 'https://www.loudnumbers.net/podcast'>Loud Numbers Podcast:</a> In each episode of the Loud Numbers podcast, they introduce a data story, explain how they sonified it, and then play the music track they created. (in English)</p>
         </div>
 
         <div class="chapter">
             <h2><span class="chapter-number">4.</span> Tools</h2>
-            <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
             
-            <h4><span class="chapter-number">4.1</span> DataSonifyer - 5 Steps to your Sonification</h4>
+            <p>There's plenty of tools to create data sonifications, we'll focus on DataSonifyer and Sonic Pi.</p>
+
+            <h4>4.1 <a href="https://datasonifyer.de/" target="_blank">DataSonifyer</a> - 5 Steps to your Sonification</h4>
             
+             <p>DataSonifyer is a web tool to transform data into sound without having to write code. Get started on the website.</p>
+
             <ul>
                 <li><strong>1. Prepare Data:</strong> You need a dataset (e.g. climate data) as CSV-file with at least one column of numerical data with one value per row (e.g. temperature anomaly per year).</li>
                 <li><strong>2. Load Data:</strong> Open studio.datasonifyer.de/en and click on "Load Data", select your CSV-file and click "open". In the pop-up, insert the delimiter of the file (mostly a comma: ",")</li>
@@ -222,25 +307,61 @@
                 <li><strong>4. Sonify Data:</strong> Let's use the Frequency-Module. Choose the data in the "Data"-Select (e.g. temperature anomaly). You then can specify the lowest and highest note of the sonification by adding values into "Min Freq" and "Max Freq" in Hertz (hearable range goes from 20 to 20000).</li>
                 <li><strong>5. Finetuning and Mixing:</strong> If you want to use a musical scale, choose one from "Scalemode". Then, define the minimum and the maximum octave in the corresponding boxes (e.g. Min: 2, Max: 5). If you want to add another set of data, e.g. Amplitude, just use the Amplitude-Module in the same way as the Frequency-Module.</li>
             </ul>
+
+            <h4>4.2 <a href="https://sonic-pi.net/" target="_blank">Sonic Pi</a> - Additional possibilites for your sonification</h4>
             
-            <h4><span class="chapter-number">4.2</span> Other Tools</h4>
+            <p>Sonic Pi is a live coding tool that can be used for sonifications. Download it on the website to get started. There's a <a href="https://sonic-pi.net/tutorial.html" target="_blank">tutorial</a> by Sam Aaron, the creator of Sonic Pi.</p>
             
-            <ul>
-                <li><strong>Sonic Pi:</strong> Sed do eiusmod tempor incididunt ut labore et dolore magna</li>
-            </ul>
+            <p><b>Live loops</b> are very valuable for data sonifications. It's easy to create your first one!</p>
+
+            <div class="code-block">
+    <h5>🎵 Try this:</h5>
+    <pre><code>notes = [48, 52, 55, 59, 60, 59, 55, 52]
+
+live_loop :melody do
+  tick
+  note = notes.look
+  puts note
+  synth :dsaw, note: note, attack: 0.02, release: 0.2, amp: 0.5
+  sleep 0.25
+end</code></pre>
+</div>
             
-            <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est.</p>
-            
-            <p>Omnis dolor repellendus temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+            <p><b>Sampling</b> offers lots of opportunities in sonification as well as music production.</p>
+     <div class="code-block">
+                <h5>🎵 Try this:</h5>
+    <pre><code>live_loop :drum_beat do
+  sample :bd_tek, amp: 0.8
+  sleep 0.5
+  sample :sn_dub, amp: 0.6
+  sleep 0.5
+  sample :bd_tek, amp: 0.8
+  sleep 0.25
+  sample :bd_tek, amp: 0.5 if one_in(3)
+  sleep 0.25
+  sample :sn_dub, amp: 0.7
+  sleep 0.5
+end
+</code></pre>
+</div>
+              <p>Consider supporting Sam Aaron, the creator of Sonic Pi, financially.</p>
         </div>
 
-  <footer>
-            <p>© 2025 - Created with GitHub Pages</p>
+  <div class="chapter">
+            <h2>5. Additional resources</h2>
+            <ul>
+                <li><a href="https://www.sonificationkit.com/">Data sonification toolkit</a></li>
+                <li><a href="https://decibels.community/">Decibels community</a></li>
+                <li><a href="https://sonification.design/">Data sonification archive</a></li>
+                <li><a href="https://sonification.design/assets/resource/Data_sonification_canvas.pdf">Data sonification canvas</a></li>
+            </ul>
+        </div>
 
-      <p>This tipsheet was created in 2025 by the data-and-sound collective SoniFriday (Christian Basl & Berit Kruse)</p>
-            <p><a href="https://www.instagram.com/sonifriday/" target="_blank">@sonifriday on Instagram</a></p>
-                        <img src="sonifriday.png" alt="Logo PNG" class="fixed-logo">
-                
+        <footer>
+            <p>© 2025 - Created with GitHub Pages</p>
+            <p>This tipsheet was created in 2025 by the data-and-sound collective SoniFriday (Christian Basl & Berit Kruse)</p>
+            <p><a href="https://www.instagram.com/sonifriday/">@sonifriday on Instagram</a></p>
+            <img src="sonifriday.png" alt="Logo PNG" class="fixed-logo">
         </footer>
     </div>
 </body>
